@@ -1,0 +1,48 @@
+extends include/layout.pug
+
+block content
+	section.breadcrumb
+		.container
+			.row
+				.col-xs-12
+					h2 Официальное подключение к такси
+		.breadcrumb__small
+			.container
+				.row
+					.col-xs-12
+						a(href="#") Главная
+						span Официальное подключение к такси
+	section.help
+		.container
+			.row
+				.col-xs-12
+					h2 Таксопарк Авто Партнер Екатеринбург поможет вам зарегистрироваться, обучиться и начать работу с Яндекс.Такси
+				.col-sm-4.col-xs-12
+					.help__block.flex.center-xs.middle-xs
+						.help__block-1
+							img(src="img/help/1.png", alt="")
+				.col-sm-4.col-xs-12
+					.help__block.flex.center-xs.middle-xs
+						img(src="img/help/2.png", alt="")
+				.col-sm-4.col-xs-12
+					.help__block.flex.center-xs.middle-xs
+						.help__block-3
+							img(src="img/help/3.png", alt="")
+				.col-xs-12.center-xs
+					a(href="#").btn Подключиться
+	section.registration
+		.container
+			.row.center-xs
+				.col-xs-12
+					h2 Регистрация в Такси
+					p Для успешной регистрации заполните пожалуйста все поля, предложеной ниже, формы.
+					form
+						.row
+							.col-sm-4.col-xs-12
+								input(type="text" placeholder="Как вас зовут?")
+							.col-sm-4.col-xs-12
+								input(type="text" placeholder="Как вас зовут?")
+							.col-sm-4.col-xs-12
+								input(type="tel" placeholder="Ваш телефон")
+							.col-xs-12
+								input(type="submit" value="Оставить заявку")

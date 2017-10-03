@@ -1,0 +1,67 @@
+@import "color.sass" 
+
+.catalog
+	margin-top: 40px
+	h2
+		font-size: 32px
+		color: $warm-grey-two
+		margin-top: 70px
+		margin-bottom: 25px
+		font-weight: 300
+	p
+		color: $warm-grey-two
+		font-size: 14px
+		line-height: 1.64
+		margin-bottom: 20px
+	ul
+		display: flex
+		margin-bottom: 50px
+		@media ("max-width: 500px")
+			flex-direction: column
+		li
+			border-radius: 26.5px
+			background-color: $dodger-blue
+			padding: 20px 0
+			text-align: center
+			color: $white
+			width: 100%
+			cursor: pointer
+			text-transform: uppercase
+			border: 1px solid $dodger-blue
+			&:not(:last-child)
+				margin-right: 25px
+			&.active
+				background: $white
+				position: relative
+				color: $dodger-blue
+				&:before
+					content: ''
+					border-width: 6px 6px 0 6px
+					border-color: $dodger-blue transparent transparent transparent
+					border-style: solid
+					position: absolute
+					bottom: -7px
+					left: 50%
+					transform: translateX(-50%)
+			@media ("max-width: 500px")
+				margin-bottom: 15px
+	&__block
+		flex-direction: column
+		transition: all 0.3s
+		padding: 25px 0 15px
+		cursor: pointer
+		text-decoration: none
+		color: $black
+		&__image
+			height: 70px
+		h3
+			margin-top: 10px
+			font-size: 16px
+			margin-bottom: 5px
+		span
+			font-size: 12px
+		&:hover
+			background: #e5e5e5
+			border-radius: 4px
+		
+

@@ -1,0 +1,138 @@
+extends include/layout.pug
+
+block content
+	section.breadcrumb.yandex--breadcrump
+		.container
+			.row
+				.col-xs-12.start-sm.center-xs
+					h2 Авто партнер
+						img(src="img/help/1.png", alt="")
+		.breadcrumb__small
+			.container
+				.row
+					.col-xs-12
+						a(href="#") Главная
+						span Контакты
+	section.yandex
+		.container
+			.row
+				.col-xs-12
+					h2 Таксопарк Авто Партнер Екатеринбург поможет вам зарегистрироваться, обучиться и начать работу с Яндекс.Такси
+					p Представляем Вам удобную и быструю возможность регистрации у крупного оператора такси. Алгоритм сотрудничества очень прост для того что бы начать зарабатывать прямо сейчас мы с Вами совершим несколько шагов.
+				.col-sm-4.col-xs-12
+					.row
+						.col-xs-12.center-xs
+							.yandex__circle
+								span 1
+						.col-xs-12
+							.yandex__circs
+								.row.center-xs
+									.col-xs-12
+										h4 Ознакомиться с условиями
+										p Подобрать нужные опции и выгодные условия сотрудничества с оператором из предложенного им перечня
+				.col-sm-4.col-xs-12
+					.row
+						.col-xs-12.center-xs
+							.yandex__circle
+								span 2
+						.col-xs-12
+							.yandex__registration
+								.row.center-xs
+									.col-xs-12
+										h4 Зарегистрироваться
+										p Предоставить список документов для регистрации и зарегистрироваться в качестве водителя нашего таксоппарка
+				.col-sm-4.col-xs-12
+					.row
+						.col-xs-12.center-xs
+							.yandex__circle
+								span 3
+						.col-xs-12
+							.yandex__work
+								.row.center-xs
+									.col-xs-12
+										h4 Обучиться и приступить к работе
+										p Пройти краткий видео курс обучения в качестве водителя такси, после чего приступить к работе и начать получать заработок
+		.yandex__conditions
+			.container
+				.row
+					.col-xs-12
+						h2 Условия работы с Яндекс.такси
+					.col-sm-2.col-xs-12
+					.col-sm-8.col-xs-12
+						form
+							.checkbox
+								.row
+									.col-xs-11
+										label(for="1").icon-checkmark Комиссия оператора (яндекс) 11,4% динамический +0,4 копеек
+									.col-xs-1.flex.end-xs
+										label
+											input(type="checkbox" id="1")
+											span
+							.checkbox
+								.row
+									.col-xs-11
+										label(for="2") Первая неделя работы без комиссии таксопарка, последующие 5%
+									.col-xs-1.flex.end-xs
+										label
+											input(type="checkbox" id="2")
+											span
+							.checkbox
+								.row
+									.col-xs-11
+										label(for="3") Брэндирование своего автомобиля -5%
+									.col-xs-1.flex.end-xs
+										label
+											input(type="checkbox" id="3")
+											span
+							.checkbox
+								.row
+									.col-xs-11
+										label(for="4") Возможность компенсирования гсм и затрат на мойку при фиксированном проценте 30%
+									.col-xs-1.flex.end-xs
+										label
+											input(type="checkbox" id="4")
+											span
+							.checkbox
+								.row
+									.col-xs-11
+										label(for="5") Свободный график выхода на маршрут
+									.col-xs-1.flex.end-xs
+										label
+											input(type="checkbox" id="5")
+											span
+							.checkbox
+								.row
+									.col-xs-11
+										label(for="6") Наличные не перечисляются оператору
+									.col-xs-1.flex.end-xs
+										label
+											input(type="checkbox" id="6")
+											span
+							.checkbox
+								.row
+									.col-xs-11
+										label(for="7") Возможность заработка от 15000 до 50000 в неделю
+									.col-xs-1.flex.end-xs
+										label
+											input(type="checkbox" id="7")
+											span
+							.row.center-xs
+								.col-xs-12
+									button.btn Арендовать
+					.col-sm-2.col-xs-12
+	section.registration
+		.container
+			.row.center-xs
+				.col-xs-12
+					h2 Регистрация в Яндекс.Такси
+					p Для успешной регистрации заполните пожалуйста все поля, предложеной ниже, формы. Все поля формы являются обязательными для заполнения. Нажав кнопку отправить Вы подтверждаете обработку Ваших данных и предоставление их оператору.
+					form
+						.row
+							.col-sm-4.col-xs-12
+								input(type="text" placeholder="Как вас зовут?")
+							.col-sm-4.col-xs-12
+								input(type="text" placeholder="Как вас зовут?")
+							.col-sm-4.col-xs-12
+								input(type="tel" placeholder="Автомобиль для работы")
+							.col-xs-12
+								input(type="submit" value="Оставить заявку")

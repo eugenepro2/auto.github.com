@@ -1,0 +1,87 @@
+extends include/layout.pug
+
+block content
+	section.breadcrumb
+		.container
+			.row
+				.col-xs-12
+					h2 Hyindai Solaris
+		.breadcrumb__small
+			.container
+				.row
+					.col-xs-12
+						a(href="#") Главная
+						a(href="#") Наш автопарк
+						span Hyundai Solaris
+	section.product
+		.container
+			.row
+				.col-xs-12
+					.product__header.flex.middle-xs
+						h2 Hyundai - Solaris
+						.product__header__price Стоимость - 800 руб, сутки
+				.col-xs-12
+					.product__content
+						.row.middle-xs
+							.col-md-7.col-sm-6.col-xs-12
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare posuere venenatis. Sed lobortis magna vel volutpat tempus. Pellentesque rutrum iaculis purus, in rhoncus nulla maximus eu. Curabitur sodales enim ac aliquam posuere. Fusce augue velit, ultricies id consequat vel, fringilla ac leo. Aenean tincidunt felis suscipit, ultricies augue id, pellentesque mauris.
+							.col-md-5.col-sm-6.col-xs-12
+								.row
+									.col-xs-6
+										a.btn.btn__book(href="#") Забронировать
+									.col-xs-6
+										a.btn(href="#") Арендовать
+				.col-xs-12
+					.row
+						.col-md-7.col-xs-12
+							img(src="img/hyundai/1.png", alt="")
+						.col-md-5.col-xs-12
+							table
+								tr
+									td Тип трансмиссии: 
+									td Ручная
+								tr 
+									td Кондиционер
+									td Есть
+								tr 
+									td Количество дверей: 
+									td 5
+								tr 
+									td Количество пассажиров:
+									td 5
+								tr 
+									td Объем багажника:
+									td 3 Сумки
+								tr 
+									td Минимальный возраст:
+									td 21
+								tr 
+									td Максимальный возраст (99-без ограничений):
+									td 99
+								tr 
+									td Число кредитных карт:
+									td 1
+								tr 
+									td Радио
+									td Есть
+								tr
+									td CD проигрыватель
+									td Есть
+		.product__slider
+			.container
+				.row
+					.col-xs-12
+						h2 Интерьер - Hyundai из нашего авто парка
+					.col-xs-12
+						.swiper-container#review
+							.swiper-wrapper
+								.swiper-slide(style="background-image: url('img/hyundai/2.png')")
+								.swiper-slide(style="background-image: url('img/hyundai/3.png')")
+							.swiper-button-next.flex.center-xs.middle-xs
+								i.icon-arrow
+							.swiper-button-prev.flex.center-xs.middle-xs
+								i.icon-arrow
+					.col-xs-12
+						.product__slider__img.flex.middle-xs.center-xs
+							.product__slider__img__bg
+							a.btn(href="#") Арендовать

@@ -1,0 +1,114 @@
+doctype
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(content='width=device-width, initial-scale=1.0, user-scalable=no', name='viewport')
+		title Auto
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Exo+2|Open+Sans:300,400,600,700|Fira+Sans:300,400,600,700&amp;subset=cyrillic")
+		link(rel="stylesheet", href="css/flexboxgrid.min.css")
+		link(rel="stylesheet", href="css/reset.css")
+		link(rel="stylesheet", href="css/fonts.css")
+		link(rel="stylesheet", href="css/swiper.min.css")
+		link(rel="stylesheet", href="css/styles.css")
+body
+	#menu.slideout-menu.slideout-menu-left
+		.row
+			.col-xs-12
+				ul
+					li
+						a(href="conditions.html") Условия
+					li
+						a(href="catalog.html") Наш автопарк   
+					li
+						a(href="#") Стандарт    
+					li
+						a(href="#") Комфорт     
+					li
+						a(href="#") Бизнес     
+					li
+						a(href="#") Преимущества     
+					li
+						a(href="contacts.html") Контакты
+	#panel.slideout-panel.slideout-panel-left
+		.header
+			.container
+				.row.middle-xs.center-xs
+					.col-md-2.col-xs-6.center-xs
+						a(href="index.html").header__logo
+							img(src="img/logo.png", alt="")
+						.top-line-anchor
+							#sticky.sticky-element
+								.sticky-anchor
+								.sticky-content
+									.menu-open
+										a#btn(href='#menu')
+											span
+					.col-md-7.col-sm-10
+						.header__nav
+							nav
+								ul
+									li
+										a(href="conditions.html") Условия
+									li
+										a(href="catalog.html") Наш автопарк   
+									li
+										a(href="#") Стандарт    
+									li
+										a(href="#") Комфорт     
+									li
+										a(href="#") Бизнес     
+									li
+										a(href="yandex.html") Преимущества     
+									li
+										a(href="contacts.html") Контакты
+					.col-md-3.end-md.col-xs-12.center-xs
+						.header__phone
+							i.icon-phone
+							a(href="tel:+7(800)9004545") +7 (800) 900 - 45 - 45
+		#panel
+			block content
+			footer.footer
+				.container
+					.row.middle-xs
+						.col-md-1.col-sm-6.col-xs-12.center-xs.start-sm
+							.footer__logo
+								img(src="img/logo-footer.png", alt="")
+						.col-md-5.col-sm-6.col-xs-12.center-xs.start-sm
+							ul
+								li
+									a(href="#") Условия
+								li
+									a(href="#") Стандарт    
+								li
+									a(href="#") Бизнес
+								li
+									a(href="#") Наш автопарк   
+								li
+									a(href="#") Комфорт
+								li
+									a(href="#") Преимущества
+						.col-md-2.col-sm-6.col-xs-12.center-xs.start-sm
+							.footer__social
+								a(href="#").flex.center-xs
+									i.icon-vimeo
+								a(href="#").flex.center-xs
+									i.icon-link
+								a(href="#").flex.center-xs
+									i.icon-twitter
+								a(href="#").flex.center-xs
+									i.icon-facebook
+						.col-md-4.end-md.start-sm.center-xs.col-sm-6.col-xs-12
+							p.footer__copyright Разработка сайта: «Маркс и энгельс»
+
+
+			
+
+			
+	
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+	script(src="js/swiper.min.js")
+	script(src="js/slideout.js")
+	script(src="js/main.js")
+
+
+	block script

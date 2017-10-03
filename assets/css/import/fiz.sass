@@ -1,0 +1,17 @@
+@import "color.sass" 
+
+.fiz
+	margin-top: 40px
+	ul
+		padding-bottom: 20px
+		li
+			background: $white-two
+			padding: 20px 25px
+			font-size: 14px
+			text-align: left
+			&:not(:last-child)
+				border-bottom: 2px solid #d0d0d0
+			&.active
+				background: $white
+				border-bottom: none
+				border-left: 2px solid $mid-blue

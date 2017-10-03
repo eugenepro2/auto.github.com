@@ -1,0 +1,93 @@
+@import "color.sass" 
+.yandex--breadcrump
+	background: url("/img/breadcrumb.png") no-repeat
+	@media ("max-width: 767px")
+		background-size: cover
+	h2
+		padding: 40px 0
+		@media ("max-width: 767px")
+			padding: 0 0 40px 0
+			@media ("max-width: 550px")
+				padding: 40px 0
+		img
+			position: absolute
+			top: 28px
+			padding-left: 30px
+			@media ("max-width: 767px")
+				position: relative
+
+.yandex
+	padding: 30px 0
+	h2
+		font-size: 30px
+		text-transform: uppercase
+		font-weight: 600
+	h4
+		font-size: 21px
+		padding-bottom: 15px
+	p
+		line-height: 21px
+	&__circle
+		width: 175px
+		height: 175px
+		border-radius: 180px
+		background: #e3b708
+		margin: 30px auto
+		span
+			font-size: 235px
+			color: #fff
+			font-weight: 700
+			position: relative
+			right: -40px
+			top: -28px
+	&__conditions
+		background: url("/img/conditions.png") no-repeat
+		padding: 70px 0 50px 0
+		background-size: cover
+		label
+			font-size: 14px
+			display: flex
+			align-items: center
+		button
+			margin-top: 40px
+		.checkbox
+			border-radius: 2px
+			transition: all 0.3s
+			&:hover
+				background: #fff
+				margin-left: -5px
+				margin-right: -5px
+				padding: 0 5px
+				&:nth-child(2n+1)
+					background: #fff
+					margin-left: -5px
+					margin-right: -5px
+			&:nth-child(2n+1)
+				background: #fff689
+				transition: all 0.3s
+			.col-xs-11 label
+				padding: 10px 20px
+			.col-xs-1 label
+				padding: 5px 20px
+			input
+				display: none
+			span
+				position: relative
+				width: 15px
+				height: 15px
+				border: 3px solid #d0d0d0
+				display: block
+				background: #fff
+			input:checked + span::before
+					content: "\e5ca"
+					font-family: 'icomoon'
+					font-size: 15px
+					color: $dodger-blue
+					position: absolute
+					left: 0
+					display: block
+					
+
+
+
+

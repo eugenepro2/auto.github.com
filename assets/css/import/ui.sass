@@ -1,0 +1,174 @@
+@import "color.sass" 
+
+body
+	font-family: 'Open Sans', sans-serif
+	outline: none
+	overflow-x: hidden
+
+h2
+	font-size: 24px
+	margin-bottom: 30px
+p
+	font-size: 14px
+	line-height: 2.14
+	margin-bottom: 30px
+
+.container
+	max-width: 1145px
+	width: 100%
+	height: 100%
+	box-sizing: border-box
+	padding: 0 10px
+.row
+	height: 100%
+
+.flex
+	display: flex
+
+
+.btn
+	font-size: 16px
+	background: $dodger-blue
+	text-decoration: none
+	color: $white
+	border-radius: 27px
+	padding: 14px 28px
+	text-align: center
+	text-transform: uppercase
+	display: inline-block
+	transition: all 0.3s
+	box-sizing: border-box
+	border: 2px solid $dodger-blue
+	cursor: pointer
+	&:hover
+		background: $white
+		color: $dodger-blue
+	&__book
+		background-color: #e9e9e9
+		color: #444444
+		border: solid 2px #949494
+	@media("max-width: 767px")
+		padding: 14px 20px
+		font-size: 12px
+	@media("max-width: 1024px")
+		padding: 14px 18px
+
+//Заголовок
+.heading
+	h2
+		font-family: 'Exo 2', sans-serif
+		font-size: 34px
+		font-weight: 600
+		text-transform: uppercase
+		margin-bottom: 0
+
+.tabs__content
+	display: none
+.tabs__content.active
+	display: block
+
+
+
+//Форма
+input
+	background: $white
+	border-radius: 23px
+	background-color: #ffffff
+	box-shadow: none
+	padding: 15px 0
+	display: block
+	width: 100%
+	text-align: center
+	text-transform: uppercase
+	border: 1px solid #c0c1c1
+	font-size: 14px
+	font-family: 'Open Sans', sans-serif
+input[type=submit]
+	background: $sun-yellow
+	color: $black-two
+	border: 1px solid $sun-yellow
+	cursor: pointer
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15)
+	transition: all 0.3s
+	&:hover
+		background: $white
+
+
+//Хлебные крошки
+.breadcrumb
+	background: $mid-blue
+	h2
+		color: $white
+		padding: 50px 0
+		font-size: 36px
+		font-weight: 600
+		font-family: 'Exo 2', sans-serif
+		text-transform: uppercase
+		margin-bottom: 0
+		position: relative
+	&__small
+		padding: 20px 0
+		background: #e9e9e9
+		a
+			color: $dodger-blue
+			font-size: 14px
+			text-decoration: none
+			border-bottom: 1px solid
+			display: inline-block
+			margin-right: 30px
+			position: relative
+			&:after
+				position: absolute
+				font-size: 10px
+				color: #7d7d7d
+				content: "\e905"
+				font-family: icomoon
+				top: 61%
+				right: -18px
+				transform: translateY(-50%)
+		span
+			color: $warm-grey-two
+			font-size: 14px
+			position: relative
+			top: 1px
+
+
+
+
+// Таблица
+table
+	width: 100%
+	tr:nth-of-type(odd)
+		background-color: #ebebeb
+	td
+		color: $warm-grey-two
+		font-size: 12px
+		padding: 10px 15px
+
+
+
+//Регистрация в такси
+.registration
+	padding-top: 70px
+	padding-bottom: 20px
+	@media("max-width: 1024px")
+		padding-top: 30px
+	h2
+		font-size: 33px
+		text-transform: uppercase
+		margin-bottom: 15px
+	p
+		font-size: 16px
+		text-transform: uppercase
+	input
+		margin-top: 35px
+
+.conditions
+	margin-top: 40px
+	h2
+		font-size: 24px
+		margin-bottom: 30px
+	p
+		margin-bottom: 30px
+
+

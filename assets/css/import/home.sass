@@ -1,0 +1,332 @@
+@import "color.sass" 
+
+.offer
+	&__park
+		padding: 60px 0
+		background: url('/img/offer/bg.png') no-repeat 50% 50%
+		background-size: cover
+		box-sizing: border-box
+		color: $white
+		position: relative
+		@media ('max-width: 1024px')
+			padding: 30px 0
+		&:after
+			content: ''
+			background: url('/img/offer/bg-auto.png') no-repeat 50% 50%
+			width: 600px
+			height: 410px
+			background-size: cover
+			display: block
+			position: absolute
+			top: 120px
+			right: 0
+			@media("max-width: 1050px")
+				display: none
+		h1
+			font-size: 73px
+			font-weight: 600
+			font-family: 'Exo 2', sans-serif
+			margin-bottom: 60px
+			@media ('max-width: 1024px')
+				font-size: 52px
+			@media("max-width: 767px")
+				font-size: 42px
+		p
+			font-family: 'Exo 2', sans-serif
+			font-size: 16px
+			margin-bottom: 20px
+			text-transform: uppercase
+		&__block
+			&__image
+				height: 70px
+				position: relative
+				margin-bottom: 25px
+				@media ("max-width: 767px")
+					margin-bottom: 60px
+				img
+					width: 100%
+					height: auto
+					position: absolute
+					bottom: 0
+					left: 0
+					@media ("max-width: 767px")
+						position: relative
+						width: 300px
+						top: 15px
+	&__form
+		background: $white-two
+		padding: 110px 0
+		h2
+			font-size: 33px
+			font-weight: 600
+			margin-bottom: 10px
+			text-transform: uppercase
+		p
+			font-size: 16px
+			text-transform: uppercase
+			margin-bottom: 10px
+		input
+			margin-top: 35px
+
+
+.help
+	background: url('/img/help/bg.png') no-repeat 50% 50%
+	background-size: cover
+	padding-top: 130px
+	padding-bottom: 70px
+	h2
+		font-size: 32px
+		line-height: 1.41
+		font-family: 'Fira Sans', sans-serif
+		color: $white
+		text-align: center
+		margin-bottom: 50px
+	&__block
+		background: $white
+		border-radius: 15px
+		margin-bottom: 35px
+		height: 160px
+		&-1
+			img
+				width: 90%
+		&-3
+			img
+				width: 90%
+	.btn
+		width: 360px
+		text-transform: uppercase
+		padding-top: 20px 0
+		@media("max-width: 767px")
+			width: 100%
+.step
+	padding: 75px 0
+	.heading
+		margin-bottom: 60px
+	&__block
+		flex-direction: column
+		&:last-child .step__block__icon:after
+			content: none
+		&__icon
+			width: 150px
+			height: 150px
+			border: 3px solid $mid-blue-three 
+			border-radius: 50%
+			position: relative
+			&:after
+				top: 50%
+				right: -126px
+				transform: translateY(-50%)
+				content: ''
+				display: block
+				position: absolute
+				width: 110px
+				height: 11px
+				background: url('/img/step/after.png') no-repeat
+				@media("max-width: 1024px")
+					display: none
+		h3
+			margin-top: 20px
+			text-align: center
+			font-size: 16px
+			padding-bottom: 20px
+
+.park
+	padding-top: 100px
+	padding-bottom: 60px
+	background: #dddddd
+	ul
+		margin-top: 60px
+		margin-bottom: 40px
+		display: flex
+		list-style: disc
+		list-style-position: inside
+		@media ("max-width: 600px")
+			flex-direction: column
+		li
+			border-radius: 27px
+			background-color: $dodger-blue
+			padding: 18px 0
+			text-align: center
+			text-transform: uppercase
+			color: $white
+			width: 210px
+			border: 1px solid $dodger-blue
+			margin-right: 15px
+			cursor: pointer
+			&.active
+				background: $white
+				color: $dodger-blue
+			@media ("max-width: 600px")
+				margin-bottom: 10px
+				width: 100%
+	h3
+		font-size: 34px
+		font-weight: 300
+		font-family: 'Exo 2', sans-serif
+		line-height: 1.5
+		font-weight: 300
+	.swiper-container
+		.swiper-slide
+			img
+				width: 100%
+		.swiper-button-next, .swiper-button-prev
+			background: $white
+			width: 45px
+			height: 45px
+			border-radius: 50%
+			cursor: pointer
+			@media ("max-width: 1024px")
+				display: none
+			i
+				color: $dodger-blue
+				font-size: 22px
+				position: relative
+				top: 1px
+		.swiper-button-next
+			i
+				right: -1px
+		.swiper-button-prev
+			i
+				display: inline-block
+				transform: rotate(180deg)
+				left: -2px
+	.swiper-pagination
+		display: none
+		width: 100%
+		margin-top: 20px
+		@media ("max-width: 1024px")
+			display: block
+		.swiper-pagination-bullet
+			margin-right: 10px
+.faq
+	padding-top: 70px
+	padding-bottom: 80px
+	@media ("max-width: 1024px")
+		padding-bottom: 20px
+	ul
+		margin-top: 40px
+		li
+			margin-bottom: 50px
+			span
+				background: $black
+				width: 35px
+				height: 35px
+				display: inline-block
+				font-size: 16px
+				border-radius: 50%
+				color: $white
+				padding-top: 9px
+				box-sizing: border-box
+				position: relative
+				top: -3px
+			h3
+				display: inline
+				font-size: 24px
+				margin-left: 12px
+			p
+				font-size: 14px
+				line-height: 2.79
+				@media ("max-width: 550px")
+					padding-top: 15px
+
+
+.taxi
+	background: $white-three
+	padding: 50px 0
+	@media("max-width: 900px")
+		.col-xs-12.flex.between-sm.center-xs
+			flex-wrap: wrap
+			img
+				width: 300px
+				padding-bottom: 10px
+				padding-left: 30px
+				padding-right: 30px
+				@media("max-width: 738px")
+					height: 100%
+.review
+	padding: 90px 0
+	@media ("max-width: 1024px")
+		padding: 70px 0 50px 0
+	.container
+		position: relative
+		.swiper-button
+			&-next, &-prev
+				background: transparent
+				cursor: pointer
+				top: 60%
+				i
+					color: $dodger-blue
+					font-size: 22px
+				@media ("max-width: 1024px")
+					display: none
+			&-next
+				right: -20px
+			&-prev
+				left: -30px
+				i
+					display: inline-block
+					transform: rotate(180deg)
+			&-disabled
+				opacity: 1
+				i
+					color: $warm-grey
+		.swiper-pagination
+			display: none
+			width: 100%
+			margin-top: 15px
+			@media ("max-width: 1150px")
+				display: block
+			.swiper-pagination-bullet
+				margin-right: 10px
+	.heading
+		margin-bottom: 40px
+	&__block
+		margin: 5px
+		box-sizing: border-box
+		padding: 35px 20px
+		box-shadow: 0 2px 6px 0 rgba(5, 7, 9, 0.25)
+		border-radius: 4px
+		.icon-star.no-active:before
+			color: $greyish
+		.icon-people
+			background: #dddddd
+			width: 46px
+			height: 46px
+			border-radius: 50%
+			font-size: 20px
+			color: $mid-blue-two
+			display: inline-block
+			&:before
+				position: relative
+				top: 12px
+		h3
+			display: inline-block
+			font-size: 16px
+			font-weight: bold
+			margin-left: 15px
+		p
+			font-size: 14px
+			line-height: 2.07
+			margin-top: 20px
+
+
+
+
+.consultation
+	background: url('/img/consultation-bg.png') 50% 50% no-repeat
+	background-size: cover
+	padding-top: 115px
+	padding-bottom: 110px
+	color: $white
+	@media ("max-width: 1024px")
+		padding-top: 40px
+		margin-bottom: -30px
+	h2
+		font-size: 33px
+		text-transform: uppercase
+		margin-bottom: 15px
+	p
+		z-index: 16px
+		text-transform: uppercase
+	input
+		margin-top: 35px

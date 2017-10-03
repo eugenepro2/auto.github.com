@@ -1,0 +1,79 @@
+@import "color.sass" 
+
+.product
+	h2
+		font-size: 32px
+		color: $warm-grey-two
+		margin-bottom: 0
+	p
+		font-size: 14px
+		color: $warm-grey-two
+		line-height: 1.64
+		margin-bottom: 0
+	img
+		width: 100%
+		margin-top: 30px
+	.btn
+		width: 100%
+		@media ("max-width: 400px")
+			width: auto
+	&__header
+		margin-top: 40px
+		margin-bottom: 30px
+		&__price
+			border-radius: 14px
+			background-color: #e1e1e1
+			color: $warm-grey-two
+			font-size: 18px
+			padding: 5px 20px
+			margin-top: 3px
+			margin-left: 25px
+	&__content
+		margin-bottom: 40px
+		@media ("max-width: 1024px")
+			margin-bottom: 0
+		a
+			@media ("max-width: 767px")
+				margin-top: 20px
+	&__slider
+		margin: 40px 0
+		&__img
+			background: url('/img/hyundai/4.png')
+			padding: 125px 0
+			position: relative
+			&__bg
+				position: absolute
+				width: 100%
+				height: 100%
+				background-color: $black-75
+			.btn
+				width: 230px
+				position: relative
+				z-index: 10
+		.swiper-container
+			margin: 30px 0
+			height: 300px
+			.swiper-slide
+				background-size: cover
+				background-repeat: no-repeat
+			.swiper-button
+				&-next, &-prev
+					background: transparent
+					cursor: pointer
+					top: 60%
+					i
+						color: $dodger-blue
+						font-size: 22px
+				&-next
+					right: -20px
+				&-prev
+					left: -30px
+					i
+						display: inline-block
+						transform: rotate(180deg)
+				&-disabled
+					opacity: 1
+					i
+						color: $warm-grey
+
+
