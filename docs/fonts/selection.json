@@ -4,6 +4,87 @@
     {
       "icon": {
         "paths": [
+          "M384 690l452-452 60 60-512 512-238-238 60-60z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "check"
+        ],
+        "defaultCode": 58826,
+        "grid": 24
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "check",
+        "id": 148,
+        "order": 14,
+        "prevSize": 24,
+        "code": 58826,
+        "name": "check"
+      },
+      "setIdx": 0,
+      "setId": 4,
+      "iconIdx": 148
+    },
+    {
+      "icon": {
+        "paths": [
+          "M829.538 674.462l-25.846 25.846-191.692-164.308-84 72-84-72-191.692 164.308-25.846-25.846 189.538-162.462-189.538-162.462 25.846-25.846 275.692 236.308 275.692-236.308 25.846 25.846-189.538 162.462 189.538 162.462zM192.115 256c-35.41 0-64.115 28.624-64.115 63.81v384.38c0 35.241 28.472 63.81 64.115 63.81h671.77c35.41 0 64.115-28.624 64.115-63.81v-384.38c0-35.241-28.472-63.81-64.115-63.81h-671.77z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "mail-envelope-closed"
+        ],
+        "grid": 32
+      },
+      "attrs": [],
+      "properties": {
+        "id": 12,
+        "order": 12,
+        "prevSize": 32,
+        "code": 59656,
+        "name": "mail-envelope-closed"
+      },
+      "setIdx": 3,
+      "setId": 1,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M658.744 749.256l-210.744-210.746v-282.51h128v229.49l173.256 173.254zM512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM512 896c-212.078 0-384-171.922-384-384s171.922-384 384-384c212.078 0 384 171.922 384 384s-171.922 384-384 384z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "clock",
+          "time",
+          "schedule"
+        ],
+        "defaultCode": 59726,
+        "grid": 16
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "clock, time2",
+        "name": "clock",
+        "id": 78,
+        "order": 11,
+        "prevSize": 32,
+        "code": 59726
+      },
+      "setIdx": 3,
+      "setId": 1,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
           "M562.769 562.769l-440.379 440.379c-28.104 28.104-73.434 28.104-101.539 0s-28.104-73.434 0-101.312l389.61-389.61-389.383-389.836c-28.104-27.878-28.104-73.434 0-101.312 27.878-28.104 73.434-28.104 101.312 0l440.379 440.379c14.052 14.052 21.078 32.411 21.078 50.769 0 18.132-7.026 36.49-21.078 50.543z"
         ],
         "attrs": [
@@ -27,9 +108,9 @@
         "prevSize": 32,
         "code": 59653
       },
-      "setIdx": 0,
+      "setIdx": 3,
       "setId": 1,
-      "iconIdx": 0
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -60,9 +141,9 @@
         "prevSize": 32,
         "code": 59655
       },
-      "setIdx": 0,
+      "setIdx": 3,
       "setId": 1,
-      "iconIdx": 1
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -89,9 +170,9 @@
         "prevSize": 32,
         "code": 59648
       },
-      "setIdx": 0,
+      "setIdx": 3,
       "setId": 1,
-      "iconIdx": 2
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -118,9 +199,9 @@
         "prevSize": 32,
         "code": 59649
       },
-      "setIdx": 0,
+      "setIdx": 3,
       "setId": 1,
-      "iconIdx": 3
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -147,9 +228,9 @@
         "prevSize": 32,
         "code": 59650
       },
-      "setIdx": 0,
+      "setIdx": 3,
       "setId": 1,
-      "iconIdx": 4
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -176,9 +257,9 @@
         "prevSize": 32,
         "code": 59651
       },
-      "setIdx": 0,
+      "setIdx": 3,
       "setId": 1,
-      "iconIdx": 5
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -205,9 +286,9 @@
         "prevSize": 32,
         "code": 59652
       },
-      "setIdx": 0,
+      "setIdx": 3,
       "setId": 1,
-      "iconIdx": 6
+      "iconIdx": 8
     },
     {
       "icon": {
@@ -234,9 +315,9 @@
         "prevSize": 32,
         "code": 59654
       },
-      "setIdx": 0,
+      "setIdx": 3,
       "setId": 1,
-      "iconIdx": 8
+      "iconIdx": 9
     }
   ],
   "height": 1024,
