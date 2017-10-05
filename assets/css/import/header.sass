@@ -2,12 +2,15 @@
 
 .header
 	background: $mid-blue-two
-	height: 105px
 	box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.12)
 	position: relative
 	&__logo
 		text-decoration: none
 		display: block
+		position: relative
+		top: 7px
+		img
+			width: 115px
 	@media ('max-width: 1055px')
 		padding: 10px 0
 	&__nav
@@ -52,7 +55,7 @@
 	width: 256px
 	min-height: 100vh
 	-webkit-overflow-scrolling: touch
-	background: #f4f4f4
+	background: $mid-blue-two
 .slideout-menu-left
 	left: 0
 	overflow-x: hidden
@@ -62,16 +65,15 @@
 		border-left: 2px solid #eaeaea
 	li
 		padding-top: 40px
-		padding-left: 10px
 	a
-		color: #0078d0
+		color: #fff
 		font-size: 21px
 		font-weight: 200
 		line-height: 13px
+		text-decoration: none
 	img
-		padding-top: 30px
-		width: 170px
-		height: 50px
+		width: 150px
+		padding-bottom: 30px
 .slideout-menu-right
 	right: 0
 .slideout-panel

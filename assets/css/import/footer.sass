@@ -3,7 +3,7 @@
 .footer
 	padding: 70px 0
 	@media("max-width: 1024px")
-		padding: 10px
+		padding: 10px 0
 	ul
 		display: flex
 		flex-wrap: wrap
@@ -22,9 +22,15 @@
 				@media ("max-width: 767px")
 					font-size: 11px
 	&__logo
+		width: 100px
 		img
+			width: 100%
 			@media("max-width: 767px")
 				padding-bottom: 20px
+		@media ('max-width: 1024px')
+			width: auto
+			img
+				width: 150px
 	&__social
 		position: relative
 		left: 20px
