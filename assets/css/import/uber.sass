@@ -1,0 +1,75 @@
+@import "color.sass" 
+.uber--breadcrump
+	background: $white
+	h2
+		padding: 40px 0
+		color: $black
+		@media ("max-width: 767px")
+			padding: 0 0 40px 0
+			@media ("max-width: 550px")
+				padding: 40px 0
+		img
+			position: absolute
+			top: 28px
+			padding-left: 30px
+			@media ("max-width: 767px")
+				position: relative
+				top: 15px
+
+.yandex--uber
+	img
+		height: 170px
+	@media ("max-width: 1024px")
+		padding: 0
+	.yandex__connection--uber
+		background: url("/img/uber/connection-uber.png")
+		padding-left: 50px
+		@media ("max-width: 767px")
+			padding-left: 0
+		.btn--uber
+			background: $white
+			border-color: $white
+			border-radius: 1px
+			color: $black
+			&:hover
+				background: none
+				color: $white
+
+	.yandex__conditions--uber
+		background: url("/img/uber/conditions-uber.png") no-repeat
+		background-size: cover
+		h2
+			color: $white
+			background: none
+			text-transform: none
+			padding: 0
+		.btn__conditions--uber
+			background: $birch
+			border-color: $birch
+			border-radius: 1px
+			color: $white
+			padding: 20px 110px
+			transition: all 0.3s 
+			&:hover
+				background: $white
+				color: $black
+.form--uber
+	input
+		border-radius: 1px
+		border: 2px solid #b8b8b8
+	input[type=submit]
+		background: $birch
+		color: $white
+		border: 2px solid $birch
+		&:hover
+			background: $white
+			color: $birch
+.registration--uber
+	h2
+		font-weight: 600
+
+
+
+
+
+

@@ -20,6 +20,10 @@
 			position: absolute
 			top: 120px
 			right: 0
+			@media("max-width: 1280px")
+				width: 445px
+				height: 325px
+				top: 180px
 			@media("max-width: 1050px")
 				display: none
 		h1
@@ -74,6 +78,65 @@
 			margin-top: 35px
 
 
+
+		.select
+			padding-bottom: 8px
+			width: 312px
+			height: 30px
+			position: absolute
+			left: 370px
+			top: -10px
+			@media ("max-width: 767px")
+				position: relative
+				left: 0
+				right: 0
+				top: 0
+				margin: auto
+			@media ("max-width: 400px")
+				margin: 0
+			@media ("max-width: 360px")
+				margin-left: -20px
+			.dropdown
+				width: 340px
+				background: none
+			.dropdown .selected
+				font-size: 33px
+				color: #2f7ae2
+				position: relative
+				&:before
+					content: ""
+					position: absolute
+					bottom: 4px
+					width: 290px
+					height: 2px
+					background: #2f7ae2
+			.dropdown .selected::after
+				box-shadow: none
+			.dropdown .carat:after
+				content: ""
+				border-top-color: $white-two
+			.dropdown .carat, .dropdown .carat:after
+				content: "\f107"
+				font-family: 'icomoon'
+				border: none
+				right: 18px
+				top: 60%
+				color: #2f7ae2
+				@media ("max-width: 767px")
+					right: 0
+				@media ("max-width: 360px")
+					display: none
+			.dropdown .carat:after
+				margin-top: -16px
+				right: -10px
+			.dropdown.focus:after
+				content: ""
+				background: none !important
+				
+
+
+
+
 .help
 	background: url('/img/help/bg.png') no-repeat 50% 50%
 	background-size: cover
@@ -94,14 +157,12 @@
 		margin-bottom: 35px
 		height: 160px
 		overflow:hidden
+		transition: all 0.3s
 		img
-			-moz-transition: all 1s ease-out
-			-o-transition: all 1s ease-out
-			-webkit-transition: all 1s ease-out
-			&:hover
-				-webkit-transform: scale(1.1)
-				-moz-transform: scale(1.1)
-				-o-transform: scale(1.1)
+			transition: all 0.3s
+		&:hover img
+			transform: scale(1.1)
+			transition: all 0.3s
 		&-1
 			img
 				width: 90%
@@ -132,7 +193,7 @@
 			position: relative
 			&:after
 				top: 50%
-				right: -126px
+				right: -123px
 				transform: translateY(-50%)
 				content: ''
 				display: block
@@ -263,16 +324,13 @@
 	padding: 50px 0
 	@media ('max-width: 1024px')
 		padding: 30px 0
-	@media("max-width: 900px")
+	@media("max-width: 820px")
 		.col-xs-12.flex.between-sm.center-xs
 			flex-wrap: wrap
 			img
-				width: 300px
-				padding-bottom: 10px
-				padding-left: 30px
-				padding-right: 30px
+				padding: 0 30px 30px 30px
 				@media("max-width: 738px")
-					height: 100%
+					padding: 0 50px 30px 50px	
 .review
 	padding: 90px 0
 	@media ("max-width: 1024px")

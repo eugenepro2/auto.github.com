@@ -1,0 +1,98 @@
+@import "color.sass" 
+.gett--breadcrump
+	background: $white
+	h2
+		padding: 40px 0
+		color: $black
+		@media ("max-width: 767px")
+			padding: 0 0 40px 0
+			@media ("max-width: 550px")
+				padding: 40px 0
+		img
+			position: absolute
+			top: 5px
+			padding-left: 30px
+			@media ("max-width: 767px")
+				position: relative
+				top: 8px
+
+.yandex--gett
+	padding-bottom: 0
+	.img
+		width: 105px
+		height: 105px
+		background: $white-two
+		display: inline-block
+		margin-bottom: 20px
+	img
+		height: auto
+		padding-bottom: 0
+	@media ("max-width: 1024px")
+		padding: 0
+	.yandex__connection--gett
+		background: url("/img/gett/connection-gett.png")
+		padding-left: 50px
+		@media ("max-width: 767px")
+			padding-left: 0
+		.btn--gett
+			background: $yellow
+			border-color: $yellow
+			border-radius: 1px
+			color: $black
+			&:hover
+				background: none
+				color: $white
+	.yandex__conditions--gett
+		background: #fbc908
+		margin-top: 50px
+		padding-bottom: 0
+		position: relative
+		@media ("max-width: 1024px")
+			margin-top: 0
+			padding-bottom: 30px
+		form
+			position: absolute
+			top: 150px
+			@media ("max-width: 1024px")
+				position: relative
+				top: 0
+		h2
+			color: $black
+			background: none
+			text-transform: none
+			padding: 0
+			margin: 0
+			@media ("max-width: 1024px")
+				padding: 0 0 15px 10px
+		.btn__conditions--gett
+			background: $black
+			border-color: $black
+			border-radius: 1px
+			color: $white
+			transition: all 0.3s 
+			padding: 20px 110px
+			&:hover
+				background: none
+				color: $black
+		.img
+			@media ("max-width: 1024px")
+				display: none
+.form--gett
+	input
+		border-radius: 1px
+		border: 2px solid #b8b8b8
+	input[type=submit]
+		background: $yellow
+		color: $white
+		border: 2px solid $yellow
+		&:hover
+			background: $white
+			color: $yellow
+
+
+
+
+
+
+
+

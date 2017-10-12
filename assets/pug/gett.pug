@@ -1,0 +1,165 @@
+extends include/layout.pug
+
+block content
+	section.breadcrumb.gett--breadcrump
+		.container
+			.row
+				.col-xs-12.start-sm.center-xs
+					h2 Авто партнер
+						img(src="img/gett/logo-gett.png", alt="")
+		.breadcrumb__small
+			.container
+				.row
+					.col-xs-12
+						a(href="#") Главная
+						a(href="#") Таксопарк
+						span Яндекс.Такси
+	section.yandex.yandex--gett
+		.yandex__connection.yandex__connection--gett
+			.container
+				.row
+					.col-xs-12
+						h1 Подключайтесь к GETT<br> и работайте на себя
+						p Наша комисия 2%
+						a(href="#").btn.btn--gett Подключиться к  Яндекс.Такси такси
+		.container
+			.row.top-xs
+				.col-xs-12
+					h2 Таксопарк Авто Партнер Екатеринбург поможет вам зарегистрироваться, обучиться и начать работу с Яндекс.Такси
+					p Представляем Вам удобную и быструю возможность регистрации у крупного оператора такси. Алгоритм сотрудничества очень прост для того что бы начать зарабатывать прямо сейчас мы с Вами совершим несколько шагов.
+				.col-sm-4.col-xs-12
+					.row
+						.col-xs-12.center-xs
+							.img
+								.row.middle-xs.center-xs
+									.col-xs-12
+										img(src="img/gett/1.png", alt="")
+						.col-xs-12
+							.yandex__circs
+								.row.center-xs
+									.col-xs-12
+										h4 Зарабатывайте до 6 000 руб. в день
+										p Чем больше заказов и выше качество, тем больше ваш заработок*
+				.col-sm-4.col-xs-12
+					.row.center-xs
+						.col-xs-12
+							.img
+								.row.middle-xs.center-xs
+									.col-xs-12
+										img(src="img/gett/2.png", alt="")
+						.col-xs-12
+							.yandex__registration
+								.row.center-xs
+									.col-xs-12
+										h4 Деньги сразу
+										p Вы получите оплату за поездки уже в первый день работы*
+				.col-sm-4.col-xs-12
+					.row
+						.col-xs-12.center-xs
+							.img
+								.row.middle-xs.center-xs
+									.col-xs-12
+										img(src="img/gett/3.png", alt="")
+						.col-xs-12
+							.yandex__work
+								.row.center-xs
+									.col-xs-12
+										h4 Заказы сразу
+										p От заявки до первого клиента — несколько часов
+		.yandex__conditions.yandex__conditions--gett
+			.container
+				.row
+					.col-md-8.center-xs.start-sm
+						h2 Условия подключения к заказам GETT TAXI
+					.col-md-4.col-xs-12
+						.img
+							img(src="img/gett/conditions-gett.png", alt="")
+					.col-md-8.col-xs-12
+						form
+							.yandex__conditions__block
+								.checkbox
+									.row
+										.col-xs-11
+											label(for="1").icon-checkmark Комиссия оператора (яндекс) 11,4% динамический +0,4 копеек
+										.col-xs-1.flex.end-xs
+											label
+												input(type="checkbox" id="1")
+												span
+								.checkbox
+									.row
+										.col-xs-11
+											label(for="2") Первая неделя работы без комиссии таксопарка, последующие 5%
+										.col-xs-1.flex.end-xs
+											label
+												input(type="checkbox" id="2")
+												span
+								.checkbox
+									.row
+										.col-xs-11
+											label(for="3") Брэндирование своего автомобиля -5%
+										.col-xs-1.flex.end-xs
+											label
+												input(type="checkbox" id="3")
+												span
+								.checkbox
+									.row
+										.col-xs-11
+											label(for="4") Возможность компенсирования гсм и затрат на мойку при фиксированном проценте 30%
+										.col-xs-1.flex.end-xs
+											label
+												input(type="checkbox" id="4")
+												span
+								.checkbox
+									.row
+										.col-xs-11
+											label(for="5") Свободный график выхода на маршрут
+										.col-xs-1.flex.end-xs
+											label
+												input(type="checkbox" id="5")
+												span
+								.checkbox
+									.row
+										.col-xs-11
+											label(for="6") Наличные не перечисляются оператору
+										.col-xs-1.flex.end-xs
+											label
+												input(type="checkbox" id="6")
+												span
+								.checkbox
+									.row
+										.col-xs-11
+											label(for="7") Возможность заработка от 15000 до 50000 в неделю
+										.col-xs-1.flex.end-xs
+											label
+												input(type="checkbox" id="7")
+												span
+							.row
+								.col-xs-12
+									button.btn.btn__conditions--gett Арендовать
+	section.registration.registration--uber
+		.container
+			.row.center-xs
+				.col-xs-12
+					h2 Регистрация в GETT TAXI
+					p Для успешной регистрации заполните пожалуйста все поля, предложеной ниже, формы. Все поля формы являются обязательными для заполнения. Нажав кнопку отправить Вы подтверждаете обработку Ваших данных и предоставление их оператору.
+					form.form--gett
+						.row
+							.col-sm-4.col-xs-12
+								input(type="text" placeholder="Как вас зовут?")
+							.col-sm-4.col-xs-12
+								input(type="text" placeholder="Как вас зовут?")
+							.col-sm-4.col-xs-12
+								input(type="tel" placeholder="Автомобиль для работы")
+							.col-xs-12
+								input(type="submit" value="Оставить заявку")
+	section.map
+		.map__block
+			.row.center-xs
+				.col-xs-12
+					a(href="tel:+7(495)2555560")  +7(495)255-55-60
+					a(href="mailto:info@yandex-taxi.pro") info@yandex-taxi.pro
+					p Адрес офиса:
+					span ул. 2-ая Машиностроения, 
+					p График работы:
+					span с 10.00 до 19.00 (Будни)
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2183.3188164627973!2d60.62240761772622!3d56.82331935598409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16e95e35443bd%3A0x72a258cdc0dd90e3!2z0YPQuy4g0KLQstC10YDQuNGC0LjQvdCwLCAzNiwg0JXQutCw0YLQtdGA0LjQvdCx0YPRgNCzLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC7LiwgNjIwMDI2!5e0!3m2!1sru!2sru!4v1507549202954" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>

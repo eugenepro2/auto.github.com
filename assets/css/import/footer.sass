@@ -21,6 +21,8 @@
 				text-decoration: none
 				@media ("max-width: 767px")
 					font-size: 11px
+				&:hover
+					text-decoration: underline
 	&__logo
 		width: 100px
 		img
@@ -45,13 +47,23 @@
 			color: $black
 			border-radius: 50%
 			margin-left: 6px
+			transition: all 0.3s
 			i
 				position: relative
 				top: 10px
+			&:hover
+				background: $black
+				i
+					color: $white
+
 	&__copyright
 		font-size: 15px
 		text-transform: uppercase
 		display: inline-block
+		color: $black
+		text-decoration: none
+		&:hover
+			text-decoration: underline
 		@media("max-width: 1044px")
 			padding-top: 20px
 			font-size: 14px

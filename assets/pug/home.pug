@@ -8,7 +8,7 @@ block content
 					.col-xs-12.start-md.center-xs
 						p Автопарк нашей компании 
 						h1 Аренда любого авто
-					.col-md-6.col-sm-12.col-xs-12
+					.col-md-7.col-sm-12.col-xs-12
 						.row.center-xs
 							.col-sm-4.col-xs-12
 								.offer__park__block
@@ -32,9 +32,10 @@ block content
 						.col-xs-12.start-sm.center-xs
 							.heading
 								h2 Аренда автомобиля
-									select
-										option Стандарт класса
-										option Комфорт класса
+									.select
+										select.dropdown(data-attribute='{"wrapperClass":"metro"}')
+											option Стандарт класса
+											option Комфорт класса
 								p Просто выберите подходящий для Вас автомобиль
 						.col-sm-4.col-xs-12
 							input(type="text" placeholder="Как вас зовут?")
@@ -50,18 +51,15 @@ block content
 				.col-xs-12.center-xs
 					h2 Таксопарк Авто Партнер Екатеринбург поможет вам зарегистрироваться, обучиться и начать работу с Яндекс.Такси
 				.col-sm-4.col-xs-12
-					.help__block.flex.center-xs.middle-xs
+					a(href="#").help__block.flex.center-xs.middle-xs
 						.help__block-1
-							a(href="#")
 								img(src="img/help/1.png", alt="")
 				.col-sm-4.col-xs-12
-					.help__block.flex.center-xs.middle-xs
-						a(href="#")
+					a(href="#").help__block.flex.center-xs.middle-xs
 							img(src="img/help/2.png", alt="")
 				.col-sm-4.col-xs-12
-					.help__block.flex.center-xs.middle-xs
+					a(href="#").help__block.flex.center-xs.middle-xs
 						.help__block-3
-							a(href="#")
 								img(src="img/help/3.png", alt="")
 				.col-xs-12.center-xs
 					a(href="#").btn Подключиться
@@ -94,83 +92,85 @@ block content
 					.heading
 						h2 Автопарк нашей компании
 				.col-xs-12
-					.tabs
-						ul.tabs__caption.center-xs
-							li.active
+					.slider
+						ul.slide-tabs.center-xs
+							li.active.slide-tab.default
 								span Класс Стандарт
-							li 
+							li.slide-tab
 								span Класс Комфорт
-							li 
+							li.slide-tab
 								span <pre>Класс Бизнес    </pre>
-						.tabs__content.active
-							.swiper-container#park
-								.swiper-wrapper
-									.swiper-slide(data-name="Reno Logan")
-										.row.center-xs
-											.col-xs-12
-												img(src="img/park/slider.png", alt="")
-												h3 Reno Logan
-									.swiper-slide(data-name="Hyundai solaris")
-										.row.center-xs
-											.col-xs-12
-												img(src="img/park/slider.png", alt="")
-												h3 Hyundai solaris - 2014г
-									.swiper-slide(data-name="Kia Rio")
-										.row.center-xs
-											.col-xs-12
-												img(src="img/park/slider.png", alt="")
-												h3 Kia Rio
-								.swiper-button-next.flex.center-xs.middle-xs
-									i.icon-arrow
-								.swiper-button-prev.flex.center-xs.middle-xs
-									i.icon-arrow
-							.swiper-pagination
-						.tabs__content
-							.swiper-container#park
-								.swiper-wrapper
-									.swiper-slide(data-name="Reno Logan")
-										.row.center-xs
-											.col-xs-12
-												img(src="img/park/slider.png", alt="")
-												h3 Reno Logan 2
-									.swiper-slide(data-name="Hyundai solaris")
-										.row.center-xs
-											.col-xs-12
-												img(src="img/park/slider.png", alt="")
-												h3 Hyundai solaris - 2014г
-									.swiper-slide(data-name="Kia Rio")
-										.row.center-xs
-											.col-xs-12
-												img(src="img/park/slider.png", alt="")
-												h3 Kia Rio
-								.swiper-button-next.flex.center-xs.middle-xs
-									i.icon-arrow
-								.swiper-button-prev.flex.center-xs.middle-xs
-									i.icon-arrow
-							.swiper-pagination
-						.tabs__content
-							.swiper-container#park
-								.swiper-wrapper
-									.swiper-slide(data-name="Reno Logan")
-										.row.center-xs
-											.col-xs-12
-												img(src="img/park/slider.png", alt="")
-												h3 Reno Logan 3
-									.swiper-slide(data-name="Hyundai solaris")
-										.row.center-xs
-											.col-xs-12
-												img(src="img/park/slider.png", alt="")
-												h3 Hyundai solaris - 2014г
-									.swiper-slide(data-name="Kia Rio")
-										.row.center-xs
-											.col-xs-12
-												img(src="img/park/slider.png", alt="")
-												h3 Kia Rio
-								.swiper-button-next.flex.center-xs.middle-xs
-									i.icon-arrow
-								.swiper-button-prev.flex.center-xs.middle-xs
-									i.icon-arrow
-							.swiper-pagination
+						.slides
+							.slide-viewport
+								.slide.active.default
+									.swiper-container#park
+										.swiper-wrapper
+											.swiper-slide(data-name="Reno Logan")
+												.row.center-xs
+													.col-xs-12
+														img(src="img/park/slider.png", alt="")
+														h3 Reno Logan
+											.swiper-slide(data-name="Hyundai solaris")
+												.row.center-xs
+													.col-xs-12
+														img(src="img/park/slider.png", alt="")
+														h3 Hyundai solaris - 2014г
+											.swiper-slide(data-name="Kia Rio")
+												.row.center-xs
+													.col-xs-12
+														img(src="img/park/slider.png", alt="")
+														h3 Kia Rio
+										.swiper-button-next.flex.center-xs.middle-xs
+											i.icon-arrow
+										.swiper-button-prev.flex.center-xs.middle-xs
+											i.icon-arrow
+									.swiper-pagination
+								.slide
+									.swiper-container#park
+										.swiper-wrapper
+											.swiper-slide(data-name="Reno Logan")
+												.row.center-xs
+													.col-xs-12
+														img(src="img/park/slider.png", alt="")
+														h3 Reno Logan 2
+											.swiper-slide(data-name="Hyundai solaris")
+												.row.center-xs
+													.col-xs-12
+														img(src="img/park/slider.png", alt="")
+														h3 Hyundai solaris - 2014г
+											.swiper-slide(data-name="Kia Rio")
+												.row.center-xs
+													.col-xs-12
+														img(src="img/park/slider.png", alt="")
+														h3 Kia Rio
+										.swiper-button-next.flex.center-xs.middle-xs
+											i.icon-arrow
+										.swiper-button-prev.flex.center-xs.middle-xs
+											i.icon-arrow
+									.swiper-pagination
+								.slide
+									.swiper-container#park
+										.swiper-wrapper
+											.swiper-slide(data-name="Reno Logan")
+												.row.center-xs
+													.col-xs-12
+														img(src="img/park/slider.png", alt="")
+														h3 Reno Logan 2
+											.swiper-slide(data-name="Hyundai solaris")
+												.row.center-xs
+													.col-xs-12
+														img(src="img/park/slider.png", alt="")
+														h3 Hyundai solaris - 2014г
+											.swiper-slide(data-name="Kia Rio")
+												.row.center-xs
+													.col-xs-12
+														img(src="img/park/slider.png", alt="")
+														h3 Kia Rio
+										.swiper-button-next.flex.center-xs.middle-xs
+											i.icon-arrow
+										.swiper-button-prev.flex.center-xs.middle-xs
+											i.icon-arrow
+									.swiper-pagination
 	section.faq
 		.container
 			.row
@@ -199,10 +199,10 @@ block content
 		.container
 			.row.middle-xs
 				.col-xs-12.flex.between-sm.center-xs
-					img(src="img/taxi/1.png", alt="")
-					img(src="img/taxi/2.png", alt="")
-					img(src="img/taxi/3.png", alt="")
-					img(src="img/taxi/4.png", alt="")
+					img(src="img/taxi/1-1.png", alt="")
+					img(src="img/taxi/1-2.png", alt="")
+					img(src="img/taxi/1-3.png", alt="")
+					img(src="img/taxi/1-4.png", alt="")
 	section.review
 		.container
 			.row
